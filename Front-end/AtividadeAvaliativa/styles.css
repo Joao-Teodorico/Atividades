@@ -1,0 +1,100 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+
+header {
+    background-color: #007BFF;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+
+header h1 {
+    margin: 0;
+}
+
+
+header h2 {
+    margin-top: 5px;
+    font-weight: lighter;
+}
+
+
+main {
+    padding: 20px;
+}
+
+
+.consultoria-info {
+    margin-bottom: 30px;
+}
+
+
+.consultoria-info table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+
+.consultoria-info th, .consultoria-info td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+
+.consultoria-info th {
+    background-color: #007BFF;
+    color: white;
+}
+
+
+form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+
+form button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+
+#confirmation-message {
+    color: green;
+    font-weight: bold;
+}
+
+

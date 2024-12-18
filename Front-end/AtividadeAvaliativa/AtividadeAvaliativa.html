@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page de Consultoria Web</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Consultoria em Desenvolvimento Web</h1>
+        <h2>Transforme suas ideias em realidade digital!</h2>
+    </header>
+
+
+    <main>
+        <section class="consultoria-info">
+            <h3>Tipos de Consultoria Oferecida</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Tipo de Consultoria</th>
+                        <th>Descrição</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Desenvolvimento Front-end</td>
+                        <td>Criação e personalização de interfaces interativas.</td>
+                    </tr>
+                    <tr>
+                        <td>Desenvolvimento Back-end</td>
+                        <td>Construção de APIs e integração com banco de dados.</td>
+                    </tr>
+                    <tr>
+                        <td>SEO e Otimização</td>
+                        <td>Melhoria de visibilidade e performance do site.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+
+        <section class="formulario">
+            <h3>Contato e Consulta</h3>
+            <form id="consultoria-form">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" required></textarea>
+
+
+                <button type="submit">Enviar</button>
+            </form>
+            <p id="confirmation-message"></p>
+        </section>
+    </main>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
