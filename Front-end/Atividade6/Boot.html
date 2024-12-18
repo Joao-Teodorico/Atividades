@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Perfil com Bootstrap</title>
+
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+ <div class="container mt-5">
+  
+   <div class="text-center mb-4">
+     <h1 class="display-4">Perfil do Usuário</h1>
+     <button id="toggle-profile" class="btn btn-primary mt-3">Mostrar Perfil</button>
+   </div>
+  
+  
+   <div id="profile-info" class="card shadow-lg p-4" style="display: none;">
+     <h2 class="card-title text-center">joao teodorico</h2>
+     <p><strong>E-mail:</strong> joaoteodorico14@gmail.com</p>
+     <p><strong>Telefone:</strong> (11) 1234-5678</p>
+     <p><strong>Endereço:</strong> Rua Exemplo, 123, São Paulo, SP</p>
+   </div>
+ </div>
+
+
+ 
+ <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+ 
+ <script>
+   $(document).ready(function () {
+     $("#toggle-profile").click(function () {
+       $("#profile-info").slideToggle(300); 
+       const buttonText = $("#profile-info").is(":visible") ? "Ocultar Perfil" : "Mostrar Perfil";
+       $(this).text(buttonText); 
+     });
+   });
+ </script>
+</body>
