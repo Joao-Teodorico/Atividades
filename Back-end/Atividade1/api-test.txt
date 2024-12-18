@@ -1,0 +1,27 @@
+GET /usuario/10 HTTP/1.1
+Host: meusite.com
+Accept: application/json
+HTTP/1.1 200 OK 
+Content-Type: application/json
+ { 
+"id": 10, 
+"nome": "João Teodorico", 
+"email": "joao.teodorico@email.com" 
+}
+
+
+PUT /usuario/10 HTTP/1.1
+Host: meusite.com
+Content-Type: application/json
+
+{
+	"email": "novousuario@email.com"
+}
+
+
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+	"mensagem": "E-mail atualizado com sucesso."
+}
